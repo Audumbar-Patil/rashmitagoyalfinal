@@ -1,4 +1,4 @@
-Mis Pintas — Static Clone
+Rashmita Goyal Landing Page
 =========================
 
 This repository contains a static, responsive clone of the Mis Pintas homepage (for personal/demo use). It is implemented using plain HTML, CSS, and a sprinkle of JavaScript so it can be hosted on GitHub Pages without a build step.
