@@ -89,9 +89,10 @@ ul { padding-left: 1.1rem; }
 @media (min-width: 860px) { .nav-toggle { display: none; } }
 
 @media (max-width: 859.9px) {
-  .site-nav { position: fixed; inset: 64px 0 auto 0; background: rgba(14,14,14,.97); transform: translateY(-110%); transition: transform .25s ease; }
+  .site-nav { position: fixed; inset: 64px 0 auto 0; background: rgba(14,14,14,.97); transform: translateY(-110%); transition: transform .25s ease; border-bottom: 1px solid rgba(255,255,255,.06); }
   .site-nav.open { transform: translateY(0); }
-  .site-nav ul { flex-direction: column; padding: 18px 20px 28px; }
+  .site-nav ul { flex-direction: column; padding: 14px 16px 22px; gap: 12px; }
+  .site-nav a { padding: 10px 8px; display: block; }
 }
 
 /* Hero */
@@ -171,6 +172,21 @@ ul { padding-left: 1.1rem; }
 
 /* CTA */
 .cta { background: linear-gradient(180deg, rgba(181,122,255,.08), rgba(115,210,222,.08)); border-top: 1px solid rgba(255,255,255,.06); border-bottom: 1px solid rgba(255,255,255,.06); }
+.cta .section-title { font-size: clamp(24px, 5.6vw, 32px); }
+.cta p { font-size: clamp(14px, 4.6vw, 18px); }
+
+/* Responsive iframe wrapper */
+.feature-media iframe { width: 100%; height: clamp(220px, 56vw, 420px); display: block; border: 0; }
+
+/* Global small-screen tuning */
+@media (max-width: 599.9px) {
+  .section { padding: 48px 0; }
+  .grid { gap: 20px; }
+  .cards { gap: 14px; }
+  .card-body { padding: 14px; }
+  .site-header .brand .brand-name { font-size: 14px; }
+  .nav-toggle { padding: 12px; }
+}
 
 /* Footer */
 .site-footer { background: #0c0c0c; border-top: 1px solid rgba(255,255,255,.08); padding-top: 36px; }
