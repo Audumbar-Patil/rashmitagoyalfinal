@@ -45,6 +45,9 @@ ul { padding-left: 1.1rem; }
   padding: 0 20px;
 }
 
+/* Prevent background scroll when mobile nav is open */
+html.nav-open, body.nav-open { height: 100%; overflow: hidden; }
+
 .section { padding: 72px 0; }
 .section-title {
   font-size: clamp(28px, 3.6vw, 40px);
@@ -89,8 +92,8 @@ ul { padding-left: 1.1rem; }
 @media (min-width: 860px) { .nav-toggle { display: none; } }
 
 @media (max-width: 859.9px) {
-  .site-nav { position: fixed; inset: 64px 0 auto 0; background: rgba(14,14,14,.97); transform: translateY(-110%); transition: transform .25s ease; border-bottom: 1px solid rgba(255,255,255,.06); }
-  .site-nav.open { transform: translateY(0); }
+  .site-nav { position: fixed; inset: 64px 0 auto 0; background: rgba(14,14,14,.97); transform: translateY(-110%); transition: transform .25s ease; border-bottom: 1px solid rgba(255,255,255,.06); z-index: 60; max-height: calc(100dvh - 64px); overflow-y: auto; -webkit-overflow-scrolling: touch; display: none; }
+  .site-nav.open { display: block; transform: translateY(0); }
   .site-nav ul { flex-direction: column; padding: 14px 16px 22px; gap: 12px; }
   .site-nav a { padding: 10px 8px; display: block; }
 }

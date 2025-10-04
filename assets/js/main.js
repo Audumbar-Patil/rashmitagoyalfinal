@@ -12,6 +12,8 @@
       const expanded = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', String(!expanded));
       siteNav.classList.toggle('open');
+      document.documentElement.classList.toggle('nav-open', !expanded);
+      document.body.classList.toggle('nav-open', !expanded);
     });
 
     // Close menu on navigation click (mobile)
@@ -20,6 +22,8 @@
       if (target && target.tagName === 'A') {
         navToggle.setAttribute('aria-expanded', 'false');
         siteNav.classList.remove('open');
+        document.documentElement.classList.remove('nav-open');
+        document.body.classList.remove('nav-open');
       }
     });
   }
