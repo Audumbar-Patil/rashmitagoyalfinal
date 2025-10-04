@@ -203,9 +203,9 @@ html.nav-open, body.nav-open { height: 100%; overflow: hidden; }
   .card-body { padding: 14px; }
   .site-header .brand .brand-name { font-size: 14px; }
   .nav-toggle { padding: 12px; }
-  .hero-media .media-placeholder { min-height: clamp(360px, 56vh, 560px); }
+  .hero-media .media-placeholder { min-height: auto; aspect-ratio: 4 / 5; }
   .hero-carousel { height: 100%; }
-  .hero-carousel img { object-fit: cover; }
+  .hero-carousel img { object-fit: cover; object-position: center top; }
 }
 
 /* Footer */
