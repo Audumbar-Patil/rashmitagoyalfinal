@@ -34,7 +34,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <!-- <li><a href="#blog">Blogs</a></li> -->
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </nav>
@@ -50,13 +51,19 @@
                 <span class="amp">of <br></span> Wearing Your True Colours.</h2>
             <p class="lead">Colour analysis isn’t about trends. It’s about discovering the shades that make people say, “You look amazing” even when nothing else has changed.</p>
             <div class="hero-ctas">
-              <a class="btn primary" href="#contact">Book Service</a>
+              <a class="btn primary" href="#book">Book Service</a>
               <a class="btn ghost" href="#services">Discover Your Colours</a>
             </div>
           </div>
           <div class="hero-media" aria-hidden="true">
             <div class="media-placeholder">
-                <img src="assets/images/hero.jpg" alt="Unique Style">
+                <div class="hero-carousel">
+                  <img src="assets/images/hero.jpg" alt="Unique style 1">
+                  <img src="assets/images/car2.jpg" alt="Unique style 2">
+                  <img src="assets/images/car3.jpg" alt="Unique style 3">
+                  <img src="assets/images/car4.jpg" alt="Unique style 4">
+                  <img src="assets/images/car5.jpg" alt="Unique style 5">
+                </div>
               <div class="gradient"></div>
               <!-- <div class="badge" style="justify-content: center; text-align: center; align-items: center;">
                 
@@ -209,7 +216,7 @@
       
 
       <!-- Testimonials -->
-      <section class="section testimonials">
+      <section id="about" class="section testimonials">
         <div class="container">
           <h2 class="section-title">My Approach</h2>
           <div class="cards three">
@@ -271,7 +278,11 @@
               </div>
               <div class="card-body">
                 <h3>Color analysis service</h3>
-                <p>Choose between a 1-hour Online session or a 1½-hour In-Studio experience, both designed to uncover your best color palette for personal and professional enhancement.</p>
+                <p>Never waste time again on shopping that leaves you confused, or clothes you regret buying.<br>
+                  Walk into a store knowing exactly what works and why <br>
+                  Book the 2 hour session only offered in person.
+
+                </p>
                 <!-- <a class="btn link" href="#contact">View Service</a> -->
               </div>
             </article>
@@ -289,6 +300,38 @@
         </div>
       </section>
 
+      <!-- Booking Form -->
+      <section id="book" class="section cta">
+        <div class="container center">
+          <h2 class="section-title">Book a Service</h2>
+          <form action="https://formspree.io/f/xwprqero" method="POST" class="booking-form">
+            <div class="grid two">
+              
+              <label>
+                Your Name:
+                <input type="text" name="name" required>
+              </label>
+              <label>
+                Your email:
+                <input type="email" name="email" required>
+              </label>
+              <label>
+                Your Number:
+                <input type="text" name="name" required>
+              </label>
+            </div>
+            <div class="grid two">
+              
+            </div>
+            <label>
+              Your message:
+              <textarea name="message" rows="5" placeholder="Tell me about your goals or questions..."></textarea>
+            </label>
+            <button type="submit" class="btn primary">Send</button>
+          </form>
+        </div>
+      </section>
+
       <!-- Social / IG-like notes -->
       
 
@@ -300,6 +343,11 @@
           <a class="btn primary icon-only" href="https://www.instagram.com/rashmita_goyal?igsh=MWM2OG85eWNyY3R4Yw==" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram profile">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Zm5.75-.75a1.25 1.25 0 1 1 0 2.5a1.25 1.25 0 0 1 0-2.5Z"/>
+            </svg>
+          </a>
+          <a class="btn primary icon-only" href="https://www.linkedin.com/in/rashmitagoyal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn profile">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8h4v12h-4V8Zm7.5 0h3.8v1.9h.05c.53-.96 1.83-2.1 3.77-2.1 4.03 0 4.78 2.65 4.78 6.1V20h-4v-6.2c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.88-2.77 3.82V20h-4V8Z"/>
             </svg>
           </a>
         </div>
@@ -327,7 +375,7 @@
           <ul>
             <li><a href="#about">About us</a></li>
             <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><a href="faq.html">FAQs</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
