@@ -101,7 +101,7 @@
         intervalId = setInterval(() => {
           currentIndex = (currentIndex + 1) % slides.length;
           show(currentIndex);
-        }, 1500);
+        }, 2000);
       };
 
       const stop = () => {
