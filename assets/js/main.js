@@ -125,9 +125,12 @@
         if (document.hidden) stop(); else start();
       });
 
-      // Pause on hover (desktop behavior)
-      carousel.addEventListener('mouseenter', stop);
-      carousel.addEventListener('mouseleave', start);
+      // Pause on hover (desktop behavior only; skip on touch devices)
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+      if (!isTouchDevice) {
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('mouseleave', start);
+      }
     }
   }
 })();

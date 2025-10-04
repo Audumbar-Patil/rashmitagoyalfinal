@@ -100,9 +100,9 @@ ul { padding-left: 1.1rem; }
 .hero-title { font-size: clamp(36px, 6vw, 64px); line-height: 1.05; margin: 0 0 14px; }
 .amp { color: var(--brand-2); }
 .hero-ctas { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
-.hero-media .media-placeholder { position: relative; border-radius: var(--radius); overflow: hidden; min-height: clamp(600px, 60vh, 720px); background: #121212; }
+.hero-media .media-placeholder { position: relative; border-radius: var(--radius); overflow: hidden; min-height: clamp(520px, 56vh, 720px); background: #121212; }
 .hero-media .media-placeholder img { width: 100% !important; height: auto !important; margin-right: 0 !important; display: block; max-height: 70vh; object-fit: cover; }
-.hero-media .gradient { position: absolute; inset: 0; background: radial-gradient(1200px 600px at 20% 20%, rgba(181,122,255,.35), transparent 60%), radial-gradient(1200px 600px at 80% 80%, rgba(115,210,222,.30), transparent 60%); filter: blur(2px); }
+.hero-media .gradient { display: none !important; }
 .hero-media .badge { position: absolute; left: 16px; bottom: 16px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); color: #fff; padding: 10px 12px; border-radius: 999px; font-weight: 600; backdrop-filter: blur(8px); }
 
 /* Hero carousel */
@@ -200,6 +200,9 @@ ul { padding-left: 1.1rem; }
   .card-body { padding: 14px; }
   .site-header .brand .brand-name { font-size: 14px; }
   .nav-toggle { padding: 12px; }
+  .hero-media .media-placeholder { min-height: clamp(360px, 56vh, 560px); }
+  .hero-carousel { height: 100%; }
+  .hero-carousel img { object-fit: cover; }
 }
 
 /* Footer */
