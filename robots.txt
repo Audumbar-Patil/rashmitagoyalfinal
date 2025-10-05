@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/private/  # If you have private assets
+
+Sitemap: https://findyourcolourswithrashmita.com/sitemap.xml
