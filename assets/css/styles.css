@@ -205,7 +205,7 @@ html.nav-open, body.nav-open { height: 100%; overflow: hidden; }
   .nav-toggle { padding: 12px; }
   .hero-media .media-placeholder { min-height: auto; aspect-ratio: 4 / 5; }
   .hero-carousel { height: 100%; }
-  .hero-carousel img { object-fit: cover; object-position: center top; }
+  .hero-carousel img { object-fit: cover; object-position: center center; }
 }
 
 /* Footer */
